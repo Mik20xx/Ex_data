@@ -23,7 +23,7 @@ x1 <- barplot(Annual.Baltimore$Total.Tons, ylim = c(0,400),
              col = c("red","purple","blue","green"))
 text(x1,Annual.Baltimore$Total.Tons + 10, 
      labels = as.character(Annual.Baltimore$Total.Tons), cex = 0.8)
-abline(h = mean(Annual.Baltimore$Total.Tons, na.rm = TRUE),lwd = 2, lty = 2)
+abline(h = mean(Annual.Baltimore$Total.Tons, na.rm = TRUE),lwd = 2)
 text(4.5,mean(Annual.Baltimore$Total.Tons)+10, "Mean")
 #
 # Second plot
@@ -34,7 +34,7 @@ x2 <- barplot(Annual.LAngeles$Total.Tons, ylim = c(0,5000),
               col = c("red","purple","blue","green"))
 text(x1,Annual.LAngeles$Total.Tons + 200, 
      labels = as.character(Annual.LAngeles$Total.Tons), cex = 0.8)
-abline(h = mean(Annual.LAngeles$Total.Tons, na.rm = TRUE),lwd = 2, lty = 2)
+abline(h = mean(Annual.LAngeles$Total.Tons, na.rm = TRUE),lwd = 2)
 text(3,mean(Annual.LAngeles$Total.Tons)+200, "Mean")
 #
 # Save file
